@@ -704,8 +704,8 @@ class DiGraph(Graph):
         try:
             del self._succ[u][v]
             del self._pred[v][u]
-        except KeyError:
-            raise NetworkXError("The edge %s-%s not in graph." % (u, v))
+    #    except KeyError:
+    #        raise NetworkXError("The edge %s-%s not in graph." % (u, v))
 
     def remove_edges_from(self, ebunch):
         """Remove all edges specified in ebunch.
